@@ -17,18 +17,8 @@ def average_filter(file,height,width):
         for j in range(int(cols)):
             frame=calculate_frame(i,j,width,height,pixels_data,cols,rows)
             filtered_image_pixels[i][j]=int( int(np.average(frame)))
-    write_image("P2", cols, rows, max_pixels, filtered_image_pixels)
+    write_image(type, cols, rows, max_pixels, filtered_image_pixels)
                         
             
-            
-            
-                        
-                        
-                       
-                                            
-            
-
-        
-
     
 average_filter("images/mona_lisa.ascii.pgm",5,5)

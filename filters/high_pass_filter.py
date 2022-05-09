@@ -17,18 +17,7 @@ def high_pass_filter(file,height,width):
             for a in range(height):
                 for b in range(width):
                     filtered_image_pixels[i][j]=filtered_image_pixels[i][j]+int(frame[a][b])*filter[a][b]
-    write_image("P2", cols, rows, max_pixels, filtered_image_pixels)
+    write_image(type, cols, rows, max_pixels, filtered_image_pixels)
                         
-            
-            
-            
-                        
-                        
-                       
-                                            
-            
-
-        
-
     
 high_pass_filter("images/mona_lisa.ascii.pgm",3,3)
