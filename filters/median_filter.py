@@ -19,7 +19,4 @@ def median_filter(file,height,width):
             flat_list=frame.flatten()
             median=np.median(flat_list)
             filtered_image_pixels[i][j]=int(median)
-    write_image(type, cols, rows, max_pixels, filtered_image_pixels)
-
-    
-median_filter("images/mona_lisa.ascii.pgm",5,5)
+    return (type,max_pixels,cols, rows,pixels_data,filtered_image_pixels)

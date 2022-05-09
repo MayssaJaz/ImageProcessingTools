@@ -18,11 +18,10 @@ def random_filter(file):
                 elif (random_number == 20):
                     modified_pixels[i].append(255)
                 else:
-                    modified_pixels[i].append(pixels_data[i][j])
-    write_image(file,cols,rows,max_pixels,modified_pixels)
+                    modified_pixels[i].append(pixels_data[i][j]) 
+    return (type,max_pixels,cols, rows,pixels_data,modified_pixels)
     
             
                 
-random_filter("images/mona_lisa.ascii.pgm")
     
 

@@ -61,3 +61,4 @@ def calculate_standard_deviation(file):
             pixels_dev = pow((int(pixels_data[i][j]) - average), 2) + pixels_dev
     standard_deviation = pixels_dev / (int(rows) * int(cols))
     print('The standard deviation is equal to', standard_deviation)
+    return standard_deviation
