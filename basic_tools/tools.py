@@ -14,7 +14,7 @@ def read_image(file):
         i = i + 1
         max_pixels = file_list[i]
         i = i + 1
-        pixels_array = file_list[i:]
+        """pixels_array = file_list[i:]
         converted_list = []
         for element in pixels_array:
             converted_list.append(element.strip())
@@ -25,6 +25,10 @@ def read_image(file):
         for row in range(int(rows)):
             pixels_data.append(cleanSplittedArray[int(
                 row) * int(cols):int(cols) * (int(row) + 1)])
+        """
+        pixels_data = []
+        for line in file_list[i]:
+            pixels_data.extend([int(c) for c in line.split()])
         return (type, cols, rows, max_pixels, pixels_data)
 
 
